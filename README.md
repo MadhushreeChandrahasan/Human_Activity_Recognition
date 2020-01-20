@@ -1,18 +1,18 @@
 # Human_Activity_Recognition
-HumanActivityRecognition
+
 
 This project is to build a model that predicts the human activities such as Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing or Laying.
 
 This dataset is collected from 30 persons(referred as subjects in this dataset), performing different activities with a smartphone to their waists. The data is recorded with the help of sensors (accelerometer and Gyroscope) in that smartphone. This experiment was video recorded to label the data manually.
 
-How data was recorded
+# How data was recorded
 By using the sensors(Gyroscope and accelerometer) in a smartphone, they have captured '3-axial linear acceleration'(tAcc-XYZ) from accelerometer and '3-axial angular velocity' (tGyro-XYZ) from Gyroscope with several variations.
 
 prefix 't' in those metrics denotes time.
 
 suffix 'XYZ' represents 3-axial signals in X , Y, and Z directions.
 
-Feature names
+# Feature names
 These sensor signals are preprocessed by applying noise filters and then sampled in fixed-width windows(sliding windows) of 2.56 seconds each with 50% overlap. ie., each window has 128 readings.
 
 From Each window, a feature vector was obtianed by calculating variables from the time and frequency domain.
@@ -97,7 +97,7 @@ Test Data
 Data Size :
 27 MB
 
-Overview of Dataset
+# Overview of Dataset
 Accelerometer and Gyroscope readings are taken from 30 volunteers(referred as subjects) while performing the following 6 Activities.
 
 Walking
@@ -122,8 +122,8 @@ We get a feature vector of 561 features and these features are given in the data
 
 Each window of readings is a datapoint of 561 features.
 
-Problem Framework
+# Problem Framework
 30 subjects(volunteers) data is randomly split to 70%(21) test and 30%(7) train data.
 Each datapoint corresponds one of the 6 Activities.
-Problem Statement
+# Problem Statement
 Given a new datapoint we have to predict the Activity
